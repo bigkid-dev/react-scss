@@ -1,0 +1,53 @@
+.layout {
+  position: absolute;
+  width: 1440px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  display: flex;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 24.75px;
+    height: 25px;
+  }
+
+  .lendsqr {
+    position: absolute;
+    width: 138.44px;
+    height: 36px;
+    left: 132.33px;
+    color: #213f7d;
+    top: 85px;
+  }
+
+  .pablo-signin {
+    position: absolute;
+    width: 600px;
+    height: 337.57px;
+    left: 67px;
+    top: 281px;
+    background: url("../assets/pablo-sign-in1.png");
+  }
+
+  .input-base {
+    position: absolute;
+    left: 736px;
+    border-style: solid;
+    width: 704px;
+    height: 900px;
+  }
+
+  @media (min-width: 768px) {
+    // Example breakpoint for tablet screens
+    max-width: 768px; // Set maximum width for tablet screens
+  }
+
+  @media (min-width: 992px) {
+    // Example breakpoint for desktop screens
+    max-width: 992px; // Set maximum width for desktop screens
+  }
+}
