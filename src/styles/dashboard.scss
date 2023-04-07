@@ -1,0 +1,457 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #e5e5e5;
+}
+
+#contents {
+  display: flex;
+}
+.dashboard {
+  padding: 0;
+  margin: 0;
+
+  .nav {
+    height: 100px;
+    background: #ffffff;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+    .lendsqr {
+      position: absolute;
+      left: 4.13%;
+      top: 30px;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      color: #213f7d;
+    }
+
+    form {
+      .search-bar {
+        display: flex;
+
+        #search {
+          box-sizing: border-box;
+
+          position: absolute;
+          left: 23.82%;
+          right: 48.4%;
+          top: 30px;
+          bottom: 30%;
+          height: 40px;
+          background: #ffffff;
+          opacity: 0.2;
+          border: 1px solid #213f7d;
+          border-radius: 8px;
+          padding-left: 20px;
+          /*fonts */
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #545f7d;
+        }
+        #search ::placeholder {
+          opacity: 0.7;
+        }
+        #search-btn {
+          position: absolute;
+          left: 47.71%;
+          right: 48.4%;
+          top: 30px;
+          bottom: 30%;
+          background: #39cdcc;
+          height: 40px;
+          border: 2px solid #39cdcc;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      }
+    }
+
+    #docs {
+      position: absolute;
+      left: 76.39%;
+      right: 21.04%;
+      top: 44px;
+      height: 14px;
+      width: 37px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      text-decoration-line: underline;
+      color: #213f7d;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+    #bell {
+      position: absolute;
+
+      right: 233.6px;
+      top: 6.67%;
+      bottom: 5.88%;
+      border: 0.4px solid #213f7d;
+    }
+    .user-img img {
+      position: absolute;
+      border-radius: 30px;
+      height: 48px;
+      width: 48px;
+      right: 152px;
+      top: 29.76px;
+    }
+    #name {
+      position: absolute;
+      right: 84px;
+      right: 5.83%;
+      top: 44px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      color: #213f7d;
+    }
+    #drop-dwn {
+      position: absolute;
+      right: 52px;
+      top: 52.8px;
+      bottom: 38.35%;
+      color: #213f7d;
+    }
+  }
+}
+
+#sidebar {
+  width: 237px;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  #organization {
+    position: relative;
+    top: 39px;
+    display: flex;
+    margin-left: 30px;
+  }
+
+  #dashboard {
+    position: relative;
+    top: 84.89px;
+    display: flex;
+    margin-left: 30px;
+  }
+
+  #customer {
+    position: absolute;
+    width: 75px;
+    height: 14px;
+    left: 30px;
+    top: 270px;
+    margin-bottom: 20px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #545f7d;
+  }
+  #section {
+    position: absolute;
+    height: 19px;
+    top: 304px;
+    left: 30px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .container {
+    position: relative;
+    top: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  #business-section {
+    position: absolute;
+    height: 14px;
+    left: 29px;
+    top: 734px;
+
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  #business {
+    position: absolute;
+    height: 14px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #545f7d;
+  }
+  #container {
+    position: relative;
+    margin-top: 30px;
+    top: 32px;
+    margin-bottom: 42px;
+    display: flex;
+  }
+  #settings {
+    position: absolute;
+    height: 14px;
+    left: 29px;
+    top: 1220px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  #settings-text {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #545f7d;
+  }
+}
+
+.icon {
+  position: relative;
+  height: 7px;
+  width: 16px;
+  left: 0px;
+  top: 6px;
+  border-radius: 0px;
+}
+.nav-link {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213f7d;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 10px;
+}
+
+#main {
+  height: 500px;
+
+  background-color: #e5e5e5;
+  width: 100%;
+}
+
+#heading {
+  position: absolute;
+  width: 66px;
+  height: 28px;
+  left: 260px;
+  top: 160px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #213f7d;
+}
+
+.container-section {
+  position: absolute;
+  top: 228px;
+  left: 260px;
+  display: flex;
+}
+.user-info {
+  box-sizing: border-box;
+  width: 240px;
+  height: 160px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin-right: 26px;
+
+  #icons {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 30px;
+    top: 20px;
+  }
+  #actives {
+    position: relative;
+    height: 16px;
+    left: 30px;
+    top: 25px;
+
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #545f7d;
+  }
+  #actives-no {
+    position: relative;
+    height: 28px;
+    left: 30px;
+    top: 12px;
+
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    color: #213f7d;
+  }
+}
+
+#base {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  position: absolute;
+  width: 1037px;
+  height: 640px;
+  left: 260px;
+  top: 428px;
+  background: #ffffff;
+  border: 2px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+
+.col {
+  img {
+    position: relative;
+    margin-left: 10px;
+    top: 5px;
+  }
+}
+#header {
+}
+tbody {
+  position: relative;
+  top: 50px;
+}
+
+.col-org {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 20%;
+}
+.col-username {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+.col-email {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 47px;
+}
+.col-phone {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 117px;
+}
+.col-date {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 32px;
+}
+.col-status {
+  position: relative;
+  height: 15px;
+  top: 30px;
+  color: #545f7d;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 84px;
+}
+
+.items {
+  height: 61px;
+  border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+}
+
+.row{
+  display: flex;
+}
+
+.data {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #545f7d;
+}
